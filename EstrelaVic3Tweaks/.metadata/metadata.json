@@ -1,0 +1,15 @@
+{
+    "name" : "Estrela's Vic3 Tweaks",
+    "id" : "com.github.estrelavic3tweaks",
+    "version" : "0.1",
+    "game_id" : "victoria3",
+    "supported_game_version" : "1.5.*",
+    "short_description" : "Minor tweaks to nations that imo makes the game more enjoyable",
+    "tags" : ["fix"],
+
+    "relationships" : [],
+    
+    "game_custom_data" : {
+        "multiplayer_synchronized" : true
+    }
+}

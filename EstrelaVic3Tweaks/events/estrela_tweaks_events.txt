@@ -1,0 +1,223 @@
+﻿namespace = estrela_events
+
+estrela_events.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = estrela_ig_wishes_to_improve_education.1.t
+	desc = estrela_ig_wishes_to_improve_education.1.d
+	flavor = estrela_ig_wishes_to_improve_education.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	cooldown = { months = normal_modifier_time }
+
+	trigger ={
+		# trigger randomly
+	}
+
+	immediate = {
+		ig:ig_intelligentsia = {
+			save_scope_as = intelligentsia_ig
+		}
+	}
+
+	option = {
+		name = estrela_ig_wishes_to_improve_education.1.a
+		add_modifier = {
+			name = estrela_improved_education_access
+			months = normal_modifier_time
+		}
+	}
+
+	option = {
+		name = estrela_ig_wishes_to_improve_education.1.b
+		add_modifier = {
+			name = estrela_improved_tech_spread
+			months = normal_modifier_time
+		}
+	}
+
+	option = {
+		name = estrela_ig_wishes_to_improve_education.1.c
+	}
+}
+
+estrela_events.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = estrela_new_construction_contracts.1.t
+	desc = estrela_new_construction_contracts.1.d
+	flavor = estrela_new_construction_contracts.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	cooldown = { months = normal_modifier_time }
+
+	trigger ={
+		# trigger randomly
+	}
+
+	option = {
+		name = estrela_new_construction_contracts.1.a
+		default_option = yes
+		add_modifier = {
+			name = estrela_increase_building_throughput
+			months = short_modifier_time
+		}
+	}
+
+	option = {
+		name = estrela_new_construction_contracts.1.b
+		add_modifier = {
+			name = estrela_increase_base_construction
+			months = short_modifier_time
+		}
+	}
+
+	option = {
+		name = estrela_new_construction_contracts.1.c
+	}
+}
+
+estrela_events.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = estrela_bad_construction_contracts.1.t
+	desc = estrela_bad_construction_contracts.1.d
+	flavor = estrela_bad_construction_contracts.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_devastation.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	cooldown = { months = normal_modifier_time }
+
+	trigger ={
+		# trigger randomly
+	}
+
+	option = {
+		name = estrela_bad_construction_contracts.1.a
+		default_option = yes
+		add_modifier = {
+			name = estrela_reduce_building_throughput
+			months = short_modifier_time
+		}
+	}
+}
+
+estrela_events.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = estrela_bad_education.1.t
+	desc = estrela_bad_education.1.d
+	flavor = estrela_bad_education.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_political_extremism.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	cooldown = { months = normal_modifier_time }
+
+	trigger ={
+		# trigger randomly
+	}
+
+	option = {
+		name = estrela_bad_education.1.a
+		add_modifier = {
+			name = estrela_reduced_education_access
+			months = normal_modifier_time
+		}
+	}
+
+	option = {
+		name = estrela_bad_education.1.b
+		add_modifier = {
+			name = estrela_reduced_tech_spread
+			months = normal_modifier_time
+		}
+	}
+}
+
+estrela_events.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = estrela_bad_army.1.t
+	desc = estrela_bad_army.1.d
+	flavor = estrela_bad_army.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_political_extremism.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	cooldown = { months = normal_modifier_time }
+
+	trigger ={
+		is_at_war = no 
+		# trigger randomly when not at war, feels cheap if, for example the player starts a war, then halfway in gets this nerf.
+	}
+
+	option = {
+		name = estrela_bad_army.1.a
+		add_modifier = {
+			name = estrela_reduce_army_output
+			months = short_modifier_time
+		}
+	}
+}
+
+estrela_events.6 = {
+		type = country_event
+		placement = ROOT
+
+		title = estrela_improve_relations_with_neighbor.1.t
+		desc = estrela_improve_relations_with_neighbor.1.d
+		flavor = estrela_improve_relations_with_neighbor.1.f
+
+		duration = 3
+
+		event_image = {
+			video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+		}
+
+		on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+		trigger = {
+			any_neighbouring_state = {
+				owner = {
+					NOT = { is_country_type = decentralized }
+				}
+			}
+		}
+	}
+}

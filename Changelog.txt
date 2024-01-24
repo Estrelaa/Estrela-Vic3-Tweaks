@@ -1,0 +1,5 @@
+State changes
+
+* Oromia now has coal 
+* Reduced population of china by about 15%
+* Reduced population of the UK + France by 5-10%

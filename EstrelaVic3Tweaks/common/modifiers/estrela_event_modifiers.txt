@@ -1,0 +1,42 @@
+﻿estrela_improved_education_access = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_education_access_add = 0.15
+}
+
+estrela_improved_tech_spread = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_tech_spread_mult = 0.15
+}
+
+estrela_reduced_education_access = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	state_education_access_add = -0.15
+}
+
+estrela_reduced_tech_spread = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_tech_spread_mult = -0.15
+}
+
+estrela_increase_building_throughput = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	building_construction_sector_throughput_add = 0.15
+}
+
+estrela_increase_base_construction = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_construction_add = 10
+}
+
+estrela_reduce_building_throughput = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	building_construction_sector_throughput_add = -0.15
+	country_construction_add = -3
+}
+
+estrela_reduce_army_output = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	unit_offense_mult = -0.1
+	unit_defense_mult = -0.1
+	unit_morale_loss_mult = 0.1
+}
